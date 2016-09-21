@@ -1,0 +1,10 @@
+POST
+/
+
+content-type:application/x-amz-json-1.0
+host:dynamodb.us-west-2.amazonaws.com
+x-amz-date:20160831T063656Z
+x-amz-target:DynamoDB_20120810.GetItem
+
+content-type;host;x-amz-date;x-amz-target
+cb7ee3fe1f9d531ad15ba1972110b82b87f4dcf813d147623adbdf1bdabd3a8b

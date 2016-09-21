@@ -1,0 +1,10 @@
+POST
+/
+
+content-type:application/x-amz-json-1.1
+host:kinesis.us-west-2.amazonaws.com
+x-amz-date:20160830T064306Z
+x-amz-target:Kinesis_20131202.PutRecords
+
+content-type;host;x-amz-date;x-amz-target
+68560b822e5190a02fc2872ed36c8cdf04bbca56130e486bfa6f3f2dec36741a
