@@ -14,12 +14,6 @@ for size in $SIZES; do
 	for workload in $WORKLOADS; do
 		for worker in $WORKERS; do
 			for record in $RECORDS; do
-			#./make_putrecord_payload.sh $size $workload
-			#./make_putrecords_payload.sh $size $workload $record
-			#./make_putitem_payload.sh $size $workload
-			#./make_getitem_payload.sh $size $workload
-			#./make_dynamo_workload.sh -n $workload -g 0 -w $worker -r 0 -d 20
-			#./make_s3_workload.sh -n $workload -g 100 -w $worker -r 0 -d 20 -s s3-us-west-2.amazonaws.com -c iguazio-michael
 			./make_workload.sh -n $workload -g $gets -w $worker -r 0 -d 20 -s 10.10.1.14 -c 12 -p /tmp/payload
 			/opt/tools/nginx_loader/nginx_loader -c wl.tmp
 			res=`echo $?`
