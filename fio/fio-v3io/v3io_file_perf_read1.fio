@@ -4,11 +4,11 @@ gtod_reduce=1
 thread ; use threads
 
 ioengine=libv3io_fio.so
-transport=rdma
+transport=tcp
 container=12
 container_alias=perf_container
 server=${SRV_ADDR0}
-port=10000
+port=1234
 time_based=1
 
 # remote file read iops test
@@ -25,38 +25,38 @@ numjobs=1
 exitall=1
 
 [object1_r]
-filename=/${SRV_ADDR0}/10000//o_1
+filename=/${SRV_ADDR0}/1234//o_1
 
 [object2_r]
-filename=/${SRV_ADDR0}/10000//o_2
+filename=/${SRV_ADDR0}/1234//o_2
 
 [object3_r]
-filename=/${SRV_ADDR0}/10000//o_3
+filename=/${SRV_ADDR0}/1234//o_3
 
 [object4_r]
-filename=/${SRV_ADDR0}/10000//k_4
+filename=/${SRV_ADDR0}/1234//k_4
 
 [object5_r]
-filename=/${SRV_ADDR0}/10000//f_5
+filename=/${SRV_ADDR0}/1234//f_5
 
 [object6_r]
-filename=/${SRV_ADDR0}/10000//h_6
+filename=/${SRV_ADDR0}/1234//h_6
 
 [object7_r]
-filename=/${SRV_ADDR0}/10000//o_7
+filename=/${SRV_ADDR0}/1234//o_7
 
 [object8_r]
-filename=/${SRV_ADDR0}/10000//l_8
+filename=/${SRV_ADDR0}/1234//l_8
 
 [object9_r]
-filename=/${SRV_ADDR0}/10000//e_9
+filename=/${SRV_ADDR0}/1234//e_9
 
 [object10_r]
-filename=/${SRV_ADDR0}/10000//h_10u
+filename=/${SRV_ADDR0}/1234//h_10u
 
 [object11_r]
-filename=/${SRV_ADDR0}/10000//a_11
+filename=/${SRV_ADDR0}/1234//a_11
 
 [object12_r]
-filename=/${SRV_ADDR0}/10000//t_12
+filename=/${SRV_ADDR0}/1234//t_12
 

@@ -1,0 +1,2 @@
+export LD_LIBRARY_PATH=/home/iguazio/igz/tools/engine/fio/lib:/home/iguazio/igz/tools/engine/accelio/lib:/home/iguazio/igz/clients/nginx/lib:/home/iguazio/igz/clients/v3io/lib; export SRV_ADDR0=10.10.3.7; XIO_TRACE=5 /home/iguazio/igz/tools/engine/fio/bin/fio ~/git/stuff/fio/fio-v3io/v3io_file_perf_write.fio
+/home/iguazio/igz/tools/engine/fio/bin/fio --client 192.168.206.38 ~/git/stuff/fio/fio-v3io/v3io_file_perf_read2.fio --client 192.168.206.37 ~/git/stuff/fio/fio-v3io/v3io_file_perf_read1.fio
