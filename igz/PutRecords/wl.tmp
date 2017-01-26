@@ -13,12 +13,68 @@ TLSMode=false
 	count=0
 	header="{}"
 	name="load0"
-	duration="20s"
+	duration="90s"
 	type="PUT"
-	workers=8
+	workers=1
 	bucket="1"
-	file_path="stream_782f619f-f087-4676-a904-b99d897f9e74"
+	file_path="stream_fb3c10e5-63c3-4b79-ab0d-81c8c6685cc5"
 	payload="/tmp/payload"
 	[workloads.load0.Header]
+	Content-Type="application/json"
+	X-v3io-function="PutRecords"
+
+	[workloads.load1]
+	count=0
+	header="{}"
+	name="load1"
+	duration="90s"
+	type="PUT"
+	workers=1
+	bucket="1"
+	file_path="stream_fb3c10e5-63c3-4b79-ab0d-81c8c6685cc5"
+	payload="/tmp/payload"
+	[workloads.load1.Header]
+	Content-Type="application/json"
+	X-v3io-function="PutRecords"
+
+	[workloads.load2]
+	count=0
+	header="{}"
+	name="load2"
+	duration="90s"
+	type="PUT"
+	workers=1
+	bucket="1"
+	file_path="stream_fb3c10e5-63c3-4b79-ab0d-81c8c6685cc5"
+	payload="/tmp/payload"
+	[workloads.load2.Header]
+	Content-Type="application/json"
+	X-v3io-function="PutRecords"
+
+	[workloads.load3]
+	count=0
+	header="{}"
+	name="load3"
+	duration="90s"
+	type="PUT"
+	workers=1
+	bucket="1"
+	file_path="stream_fb3c10e5-63c3-4b79-ab0d-81c8c6685cc5"
+	payload="/tmp/payload"
+	[workloads.load3.Header]
+	Content-Type="application/json"
+	X-v3io-function="PutRecords"
+
+	[workloads.load4]
+	count=0
+	header="{}"
+	name="load4"
+	duration="90s"
+	type="PUT"
+	workers=1
+	bucket="1"
+	file_path="stream_fb3c10e5-63c3-4b79-ab0d-81c8c6685cc5"
+	payload="/tmp/payload"
+	[workloads.load4.Header]
 	Content-Type="application/json"
 	X-v3io-function="PutRecords"
