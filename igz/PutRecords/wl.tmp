@@ -1,7 +1,7 @@
 [global]
 duration="3600s"
-NGINX_SERVER="10.10.1.21"
-NGINX_PORT="8081"
+server="10.10.1.21"
+port="8081"
 [workloads]
 
 	[workloads.load0]

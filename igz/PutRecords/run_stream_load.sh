@@ -18,7 +18,7 @@ for shard in $SHARDS; do
 				for worker in $WORKERS; do
 					for record in $RECORDS; do
 			stream=stream_`uuidgen`
-		        curl -H "Content-Type:application/json" -H "X-v3io-function:CreateStream" -d '{"ShardCount":'$shard',"ShardRetentionPeriodSizeMB":2048}' -X PUT http://10.10.1.14:8081/12/$stream -w "%{http_code}"
+		        curl -H "Content-Type:application/json" -H "X-v3io-function:CreateStream" -d '{"ShardCount":'$shard',"ShardRetentionPeriodSizeMB":32768}' -X PUT http://10.10.1.21:8081/1/$stream -w "%{http_code}"
 			./make_workload.sh -n $workload -g 0 -w $worker -r 0 -s 10.10.1.14 -c 12 -p /tmp/payload -d 20 -f $stream/ -h Content-Type="\"application/json"\",X-v3io-function="\"PutRecords"\"
 			#/opt/tools/nginx_loader/nginx_loader -c wl.tmp
 			/home/iguazio/git/naipi_tools/nginx_loader/nginx_loader -c wl.tmp

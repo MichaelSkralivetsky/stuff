@@ -55,7 +55,7 @@ shift $((OPTIND-1))
 
 
 truncate -s 0 wl.tmp
-echo -e "[global]\nduration="\"3600s"\"\nNGINX_SERVER="\"dynamodb.us-west-2.amazonaws.com"\"\nNGINX_PORT="\"443"\"\n"HTTPS=true"\n[workloads]" >> wl.tmp
+echo -e "[global]\nduration="\"3600s"\"\nserver="\"dynamodb.us-west-2.amazonaws.com"\"\nport="\"443"\"\n"HTTPS=true"\n[workloads]" >> wl.tmp
 
 let gets=load*g/100
 let puts=load-gets

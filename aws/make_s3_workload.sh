@@ -55,7 +55,7 @@ shift $((OPTIND-1))
 
 
 truncate -s 0 wl.tmp
-echo -e "[global]\nduration="\"3600s"\"\nNGINX_SERVER="\"$s"\"\nNGINX_PORT="\"80"\"\n[workloads]" >> wl.tmp
+echo -e "[global]\nduration="\"3600s"\"\nserver="\"$s"\"\nport="\"80"\"\n[workloads]" >> wl.tmp
 
 let gets=load*g/100
 let puts=load-gets
