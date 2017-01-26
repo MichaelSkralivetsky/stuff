@@ -16,7 +16,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load0.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load1]
 	count=0
@@ -30,7 +30,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load1.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load2]
 	count=0
@@ -44,7 +44,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load2.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load3]
 	count=0
@@ -58,7 +58,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load3.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load4]
 	count=0
@@ -72,7 +72,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load4.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load5]
 	count=0
@@ -86,7 +86,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load5.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load6]
 	count=0
@@ -100,7 +100,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load6.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load7]
 	count=0
@@ -114,7 +114,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load7.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load8]
 	count=0
@@ -128,7 +128,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load8.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load9]
 	count=0
@@ -142,7 +142,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load9.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load10]
 	count=0
@@ -156,7 +156,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load10.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load11]
 	count=0
@@ -170,7 +170,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load11.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load12]
 	count=0
@@ -184,7 +184,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load12.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load13]
 	count=0
@@ -198,7 +198,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load13.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load14]
 	count=0
@@ -212,7 +212,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load14.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load15]
 	count=0
@@ -226,7 +226,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load15.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load16]
 	count=0
@@ -240,7 +240,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load16.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load17]
 	count=0
@@ -254,7 +254,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load17.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load18]
 	count=0
@@ -268,7 +268,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load18.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load19]
 	count=0
@@ -282,7 +282,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load19.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load20]
 	count=0
@@ -296,7 +296,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load20.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load21]
 	count=0
@@ -310,7 +310,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load21.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load22]
 	count=0
@@ -324,7 +324,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load22.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load23]
 	count=0
@@ -338,7 +338,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load23.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load24]
 	count=0
@@ -352,7 +352,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load24.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load25]
 	count=0
@@ -366,7 +366,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load25.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load26]
 	count=0
@@ -380,7 +380,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load26.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load27]
 	count=0
@@ -394,7 +394,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load27.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load28]
 	count=0
@@ -408,7 +408,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load28.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load29]
 	count=0
@@ -422,7 +422,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load29.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load30]
 	count=0
@@ -436,7 +436,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load30.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load31]
 	count=0
@@ -450,7 +450,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load31.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load32]
 	count=0
@@ -464,7 +464,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load32.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load33]
 	count=0
@@ -478,7 +478,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load33.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load34]
 	count=0
@@ -492,7 +492,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load34.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load35]
 	count=0
@@ -506,7 +506,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load35.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load36]
 	count=0
@@ -520,7 +520,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load36.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load37]
 	count=0
@@ -534,7 +534,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load37.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load38]
 	count=0
@@ -548,7 +548,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load38.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load39]
 	count=0
@@ -562,7 +562,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load39.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load40]
 	count=0
@@ -576,7 +576,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load40.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load41]
 	count=0
@@ -590,7 +590,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load41.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load42]
 	count=0
@@ -604,7 +604,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load42.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load43]
 	count=0
@@ -618,7 +618,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load43.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load44]
 	count=0
@@ -632,7 +632,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load44.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load45]
 	count=0
@@ -646,7 +646,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load45.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load46]
 	count=0
@@ -660,7 +660,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load46.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load47]
 	count=0
@@ -674,7 +674,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load47.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load48]
 	count=0
@@ -688,7 +688,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load48.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load49]
 	count=0
@@ -702,7 +702,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load49.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load50]
 	count=0
@@ -716,7 +716,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load50.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load51]
 	count=0
@@ -730,7 +730,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load51.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load52]
 	count=0
@@ -744,7 +744,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load52.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load53]
 	count=0
@@ -758,7 +758,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load53.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load54]
 	count=0
@@ -772,7 +772,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load54.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load55]
 	count=0
@@ -786,7 +786,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load55.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load56]
 	count=0
@@ -800,7 +800,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load56.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load57]
 	count=0
@@ -814,7 +814,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load57.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load58]
 	count=0
@@ -828,7 +828,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load58.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load59]
 	count=0
@@ -842,7 +842,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load59.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load60]
 	count=0
@@ -856,7 +856,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load60.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load61]
 	count=0
@@ -870,7 +870,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load61.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load62]
 	count=0
@@ -884,7 +884,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load62.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load63]
 	count=0
@@ -898,7 +898,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load63.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load64]
 	count=0
@@ -912,7 +912,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load64.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load65]
 	count=0
@@ -926,7 +926,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load65.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load66]
 	count=0
@@ -940,7 +940,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load66.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load67]
 	count=0
@@ -954,7 +954,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load67.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load68]
 	count=0
@@ -968,7 +968,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load68.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load69]
 	count=0
@@ -982,7 +982,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load69.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load70]
 	count=0
@@ -996,7 +996,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load70.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load71]
 	count=0
@@ -1010,7 +1010,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load71.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load72]
 	count=0
@@ -1024,7 +1024,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load72.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load73]
 	count=0
@@ -1038,7 +1038,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load73.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load74]
 	count=0
@@ -1052,7 +1052,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load74.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load75]
 	count=0
@@ -1066,7 +1066,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load75.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load76]
 	count=0
@@ -1080,7 +1080,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load76.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load77]
 	count=0
@@ -1094,7 +1094,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load77.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load78]
 	count=0
@@ -1108,7 +1108,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load78.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load79]
 	count=0
@@ -1122,7 +1122,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load79.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load80]
 	count=0
@@ -1136,7 +1136,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load80.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load81]
 	count=0
@@ -1150,7 +1150,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load81.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load82]
 	count=0
@@ -1164,7 +1164,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load82.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load83]
 	count=0
@@ -1178,7 +1178,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load83.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load84]
 	count=0
@@ -1192,7 +1192,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load84.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load85]
 	count=0
@@ -1206,7 +1206,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load85.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load86]
 	count=0
@@ -1220,7 +1220,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load86.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load87]
 	count=0
@@ -1234,7 +1234,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load87.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load88]
 	count=0
@@ -1248,7 +1248,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load88.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load89]
 	count=0
@@ -1262,7 +1262,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load89.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load90]
 	count=0
@@ -1276,7 +1276,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load90.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load91]
 	count=0
@@ -1290,7 +1290,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load91.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load92]
 	count=0
@@ -1304,7 +1304,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load92.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load93]
 	count=0
@@ -1318,7 +1318,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load93.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load94]
 	count=0
@@ -1332,7 +1332,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load94.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load95]
 	count=0
@@ -1346,7 +1346,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load95.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load96]
 	count=0
@@ -1360,7 +1360,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load96.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load97]
 	count=0
@@ -1374,7 +1374,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load97.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load98]
 	count=0
@@ -1388,7 +1388,7 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load98.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"
 
 	[workloads.load99]
 	count=0
@@ -1402,4 +1402,4 @@ NGINX_PORT="8081"
 	payload="/tmp/payload3"
 	[workloads.load99.Header]
 	Content-Type="application/json"
-	X-igz-function="GetRecords"
+	X-v3io-function="GetRecords"

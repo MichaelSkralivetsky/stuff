@@ -3,7 +3,7 @@
 show_help() {
 	echo "Workload file generator for nginx_loader, make sure that r_$n files exist before running benchmark"
 	echo "Usage: -n [num of workloads] -g [% of GETs] -w [num of workers per workload] -r [0|1, 1=work on random files] -s [server IP] -c [container id] -p [payload file path] -d [duration, sec] -f [filepath] -h [headers]"
-	echo -e "Example: ./make_workload.sh -n 200 -g 100 -w 10 -r 0 -s 10.10.1.14 -c 12 -p /tmp/payload -d 20 -f walla4/0 -h Content-Type="\"\\\"application/json"\"\\\",X-igz-function="\"\\\"PutRecords"\"\\\""
+	echo -e "Example: ./make_workload.sh -n 200 -g 100 -w 10 -r 0 -s 10.10.1.14 -c 12 -p /tmp/payload -d 20 -f walla4/0 -h Content-Type="\"\\\"application/json"\"\\\",X-v3io-function="\"\\\"PutRecords"\"\\\""
 	echo "wl.tmp workload file will be generated in current directory, default filepath=r_i if not specified"
 	exit 1
 }

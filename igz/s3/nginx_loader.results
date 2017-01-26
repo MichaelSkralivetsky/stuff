@@ -1,0 +1,17 @@
+[global]
+overall_requests=15398893
+overall_iops=760091
+
+[get]
+overall_requests=15398893
+overall_iops=760091
+overall_lat_min=78usec
+overall_lat_max=242029usec
+overall_lat_avg=3866usec
+
+[put]
+overall_requests=0
+overall_iops=0
+overall_lat_min=0usec
+overall_lat_max=0usec
+overall_lat_avg=0usec

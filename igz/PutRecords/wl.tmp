@@ -1,6 +1,6 @@
 [global]
 duration="3600s"
-NGINX_SERVER="10.10.1.14"
+NGINX_SERVER="10.10.1.21"
 NGINX_PORT="8081"
 [workloads]
 
@@ -10,13 +10,13 @@ NGINX_PORT="8081"
 	name="load0"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load0.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load1]
 	count=0
@@ -24,13 +24,13 @@ NGINX_PORT="8081"
 	name="load1"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load1.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load2]
 	count=0
@@ -38,13 +38,13 @@ NGINX_PORT="8081"
 	name="load2"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load2.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load3]
 	count=0
@@ -52,13 +52,13 @@ NGINX_PORT="8081"
 	name="load3"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load3.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load4]
 	count=0
@@ -66,13 +66,13 @@ NGINX_PORT="8081"
 	name="load4"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load4.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load5]
 	count=0
@@ -80,13 +80,13 @@ NGINX_PORT="8081"
 	name="load5"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load5.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load6]
 	count=0
@@ -94,13 +94,13 @@ NGINX_PORT="8081"
 	name="load6"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load6.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load7]
 	count=0
@@ -108,13 +108,13 @@ NGINX_PORT="8081"
 	name="load7"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load7.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load8]
 	count=0
@@ -122,13 +122,13 @@ NGINX_PORT="8081"
 	name="load8"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load8.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load9]
 	count=0
@@ -136,13 +136,13 @@ NGINX_PORT="8081"
 	name="load9"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load9.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load10]
 	count=0
@@ -150,13 +150,13 @@ NGINX_PORT="8081"
 	name="load10"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load10.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load11]
 	count=0
@@ -164,13 +164,13 @@ NGINX_PORT="8081"
 	name="load11"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load11.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load12]
 	count=0
@@ -178,13 +178,13 @@ NGINX_PORT="8081"
 	name="load12"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load12.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load13]
 	count=0
@@ -192,13 +192,13 @@ NGINX_PORT="8081"
 	name="load13"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load13.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load14]
 	count=0
@@ -206,13 +206,13 @@ NGINX_PORT="8081"
 	name="load14"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load14.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load15]
 	count=0
@@ -220,13 +220,13 @@ NGINX_PORT="8081"
 	name="load15"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load15.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load16]
 	count=0
@@ -234,13 +234,13 @@ NGINX_PORT="8081"
 	name="load16"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load16.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load17]
 	count=0
@@ -248,13 +248,13 @@ NGINX_PORT="8081"
 	name="load17"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load17.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load18]
 	count=0
@@ -262,13 +262,13 @@ NGINX_PORT="8081"
 	name="load18"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load18.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load19]
 	count=0
@@ -276,13 +276,13 @@ NGINX_PORT="8081"
 	name="load19"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load19.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load20]
 	count=0
@@ -290,13 +290,13 @@ NGINX_PORT="8081"
 	name="load20"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load20.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load21]
 	count=0
@@ -304,13 +304,13 @@ NGINX_PORT="8081"
 	name="load21"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load21.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load22]
 	count=0
@@ -318,13 +318,13 @@ NGINX_PORT="8081"
 	name="load22"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load22.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load23]
 	count=0
@@ -332,13 +332,13 @@ NGINX_PORT="8081"
 	name="load23"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load23.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load24]
 	count=0
@@ -346,13 +346,13 @@ NGINX_PORT="8081"
 	name="load24"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load24.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load25]
 	count=0
@@ -360,13 +360,13 @@ NGINX_PORT="8081"
 	name="load25"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load25.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load26]
 	count=0
@@ -374,13 +374,13 @@ NGINX_PORT="8081"
 	name="load26"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load26.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load27]
 	count=0
@@ -388,13 +388,13 @@ NGINX_PORT="8081"
 	name="load27"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load27.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load28]
 	count=0
@@ -402,13 +402,13 @@ NGINX_PORT="8081"
 	name="load28"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load28.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load29]
 	count=0
@@ -416,13 +416,13 @@ NGINX_PORT="8081"
 	name="load29"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load29.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load30]
 	count=0
@@ -430,13 +430,13 @@ NGINX_PORT="8081"
 	name="load30"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load30.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load31]
 	count=0
@@ -444,13 +444,13 @@ NGINX_PORT="8081"
 	name="load31"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load31.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load32]
 	count=0
@@ -458,13 +458,13 @@ NGINX_PORT="8081"
 	name="load32"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load32.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load33]
 	count=0
@@ -472,13 +472,13 @@ NGINX_PORT="8081"
 	name="load33"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load33.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load34]
 	count=0
@@ -486,13 +486,13 @@ NGINX_PORT="8081"
 	name="load34"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load34.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load35]
 	count=0
@@ -500,13 +500,13 @@ NGINX_PORT="8081"
 	name="load35"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load35.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load36]
 	count=0
@@ -514,13 +514,13 @@ NGINX_PORT="8081"
 	name="load36"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load36.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load37]
 	count=0
@@ -528,13 +528,13 @@ NGINX_PORT="8081"
 	name="load37"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load37.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load38]
 	count=0
@@ -542,13 +542,13 @@ NGINX_PORT="8081"
 	name="load38"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load38.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load39]
 	count=0
@@ -556,13 +556,13 @@ NGINX_PORT="8081"
 	name="load39"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load39.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load40]
 	count=0
@@ -570,13 +570,13 @@ NGINX_PORT="8081"
 	name="load40"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load40.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load41]
 	count=0
@@ -584,13 +584,13 @@ NGINX_PORT="8081"
 	name="load41"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load41.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load42]
 	count=0
@@ -598,13 +598,13 @@ NGINX_PORT="8081"
 	name="load42"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load42.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load43]
 	count=0
@@ -612,13 +612,13 @@ NGINX_PORT="8081"
 	name="load43"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load43.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load44]
 	count=0
@@ -626,13 +626,13 @@ NGINX_PORT="8081"
 	name="load44"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load44.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load45]
 	count=0
@@ -640,13 +640,13 @@ NGINX_PORT="8081"
 	name="load45"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load45.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load46]
 	count=0
@@ -654,13 +654,13 @@ NGINX_PORT="8081"
 	name="load46"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load46.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load47]
 	count=0
@@ -668,13 +668,13 @@ NGINX_PORT="8081"
 	name="load47"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load47.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load48]
 	count=0
@@ -682,13 +682,13 @@ NGINX_PORT="8081"
 	name="load48"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load48.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load49]
 	count=0
@@ -696,13 +696,13 @@ NGINX_PORT="8081"
 	name="load49"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load49.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load50]
 	count=0
@@ -710,13 +710,13 @@ NGINX_PORT="8081"
 	name="load50"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load50.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load51]
 	count=0
@@ -724,13 +724,13 @@ NGINX_PORT="8081"
 	name="load51"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load51.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load52]
 	count=0
@@ -738,13 +738,13 @@ NGINX_PORT="8081"
 	name="load52"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load52.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load53]
 	count=0
@@ -752,13 +752,13 @@ NGINX_PORT="8081"
 	name="load53"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load53.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load54]
 	count=0
@@ -766,13 +766,13 @@ NGINX_PORT="8081"
 	name="load54"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load54.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load55]
 	count=0
@@ -780,13 +780,13 @@ NGINX_PORT="8081"
 	name="load55"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load55.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load56]
 	count=0
@@ -794,13 +794,13 @@ NGINX_PORT="8081"
 	name="load56"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load56.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load57]
 	count=0
@@ -808,13 +808,13 @@ NGINX_PORT="8081"
 	name="load57"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load57.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load58]
 	count=0
@@ -822,13 +822,13 @@ NGINX_PORT="8081"
 	name="load58"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load58.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load59]
 	count=0
@@ -836,13 +836,13 @@ NGINX_PORT="8081"
 	name="load59"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load59.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load60]
 	count=0
@@ -850,13 +850,13 @@ NGINX_PORT="8081"
 	name="load60"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load60.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load61]
 	count=0
@@ -864,13 +864,13 @@ NGINX_PORT="8081"
 	name="load61"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load61.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load62]
 	count=0
@@ -878,13 +878,13 @@ NGINX_PORT="8081"
 	name="load62"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load62.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load63]
 	count=0
@@ -892,13 +892,13 @@ NGINX_PORT="8081"
 	name="load63"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load63.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load64]
 	count=0
@@ -906,13 +906,13 @@ NGINX_PORT="8081"
 	name="load64"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load64.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load65]
 	count=0
@@ -920,13 +920,13 @@ NGINX_PORT="8081"
 	name="load65"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load65.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load66]
 	count=0
@@ -934,13 +934,13 @@ NGINX_PORT="8081"
 	name="load66"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load66.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load67]
 	count=0
@@ -948,13 +948,13 @@ NGINX_PORT="8081"
 	name="load67"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load67.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load68]
 	count=0
@@ -962,13 +962,13 @@ NGINX_PORT="8081"
 	name="load68"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load68.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load69]
 	count=0
@@ -976,13 +976,13 @@ NGINX_PORT="8081"
 	name="load69"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load69.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load70]
 	count=0
@@ -990,13 +990,13 @@ NGINX_PORT="8081"
 	name="load70"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load70.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load71]
 	count=0
@@ -1004,13 +1004,13 @@ NGINX_PORT="8081"
 	name="load71"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load71.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load72]
 	count=0
@@ -1018,13 +1018,13 @@ NGINX_PORT="8081"
 	name="load72"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load72.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load73]
 	count=0
@@ -1032,13 +1032,13 @@ NGINX_PORT="8081"
 	name="load73"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load73.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load74]
 	count=0
@@ -1046,13 +1046,13 @@ NGINX_PORT="8081"
 	name="load74"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load74.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load75]
 	count=0
@@ -1060,13 +1060,13 @@ NGINX_PORT="8081"
 	name="load75"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load75.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load76]
 	count=0
@@ -1074,13 +1074,13 @@ NGINX_PORT="8081"
 	name="load76"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load76.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load77]
 	count=0
@@ -1088,13 +1088,13 @@ NGINX_PORT="8081"
 	name="load77"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load77.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load78]
 	count=0
@@ -1102,13 +1102,13 @@ NGINX_PORT="8081"
 	name="load78"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load78.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load79]
 	count=0
@@ -1116,13 +1116,13 @@ NGINX_PORT="8081"
 	name="load79"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load79.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load80]
 	count=0
@@ -1130,13 +1130,13 @@ NGINX_PORT="8081"
 	name="load80"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load80.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load81]
 	count=0
@@ -1144,13 +1144,13 @@ NGINX_PORT="8081"
 	name="load81"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load81.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load82]
 	count=0
@@ -1158,13 +1158,13 @@ NGINX_PORT="8081"
 	name="load82"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load82.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load83]
 	count=0
@@ -1172,13 +1172,13 @@ NGINX_PORT="8081"
 	name="load83"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load83.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load84]
 	count=0
@@ -1186,13 +1186,13 @@ NGINX_PORT="8081"
 	name="load84"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load84.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load85]
 	count=0
@@ -1200,13 +1200,13 @@ NGINX_PORT="8081"
 	name="load85"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load85.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load86]
 	count=0
@@ -1214,13 +1214,13 @@ NGINX_PORT="8081"
 	name="load86"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load86.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load87]
 	count=0
@@ -1228,13 +1228,13 @@ NGINX_PORT="8081"
 	name="load87"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load87.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load88]
 	count=0
@@ -1242,13 +1242,13 @@ NGINX_PORT="8081"
 	name="load88"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load88.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load89]
 	count=0
@@ -1256,13 +1256,13 @@ NGINX_PORT="8081"
 	name="load89"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load89.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load90]
 	count=0
@@ -1270,13 +1270,13 @@ NGINX_PORT="8081"
 	name="load90"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load90.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load91]
 	count=0
@@ -1284,13 +1284,13 @@ NGINX_PORT="8081"
 	name="load91"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load91.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load92]
 	count=0
@@ -1298,13 +1298,13 @@ NGINX_PORT="8081"
 	name="load92"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load92.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load93]
 	count=0
@@ -1312,13 +1312,13 @@ NGINX_PORT="8081"
 	name="load93"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load93.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load94]
 	count=0
@@ -1326,13 +1326,13 @@ NGINX_PORT="8081"
 	name="load94"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load94.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load95]
 	count=0
@@ -1340,13 +1340,13 @@ NGINX_PORT="8081"
 	name="load95"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load95.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load96]
 	count=0
@@ -1354,13 +1354,13 @@ NGINX_PORT="8081"
 	name="load96"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load96.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load97]
 	count=0
@@ -1368,13 +1368,13 @@ NGINX_PORT="8081"
 	name="load97"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load97.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load98]
 	count=0
@@ -1382,13 +1382,13 @@ NGINX_PORT="8081"
 	name="load98"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load98.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
 
 	[workloads.load99]
 	count=0
@@ -1396,10 +1396,10 @@ NGINX_PORT="8081"
 	name="load99"
 	duration="20s"
 	type="PUT"
-	workers=25
+	workers=10
 	bucket="12"
-	file_path="stream666"
-	payload="/tmp/payload1"
+	file_path="stream1/"
+	payload="/tmp/payload"
 	[workloads.load99.Header]
 	Content-Type="application/json"
-	X-v3io-function="CreateStream"
+	X-v3io-function="PutRecords"
