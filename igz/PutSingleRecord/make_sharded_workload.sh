@@ -57,7 +57,7 @@ shift $((OPTIND-1))
 
 
 truncate -s 0 wl.tmp
-echo -e "[global]\nduration="\"3600s"\"\nserver="\"$s"\"\nport="\"8081"\"\n[workloads]" >> wl.tmp
+echo -e "[global]\nduration="\"3600s"\"\nserver="\"$s"\"\nport="\"8081"\"\nTLSMode=false\\n[global.StatusCodesAcceptance]""\n\t200=100.0""\n\t204=100.0""\n\t205=100.0""\n[workloads]" >> wl.tmp
 
 let gets=load*g/100
 let puts=load-gets
