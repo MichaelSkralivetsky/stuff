@@ -57,7 +57,7 @@ shift $((OPTIND-1))
 
 
 truncate -s 0 wl.tmp
-echo -e "[global]\nduration="\"3600s"\"\nserver="\"$s"\"\nport="\"8081"\"\n[workloads]" >> wl.tmp
+echo -e "[global]\nduration="\"3600s"\"\nserver="\"$s"\"\nport="\"8081"\"\nTLSMode=false\\n[global.StatusCodesAcceptance]""\n\t200=100.0""\n\t204=100.0""\n\t205=100.0""\n[workloads]" >> wl.tmp
 
 let gets=load*g/100
 let puts=load-gets
@@ -104,12 +104,13 @@ let k=0
 		if [ -z $f ]; then
                         path=r_$i
                 else
+			path=$f
 			if [ $j -lt $mf ]; then
-                        	path=$f$k
+                        	p=$p$k
 			else
 				let j=0
 				let k++
-				path=$f$k
+				p=$p$k
 			fi
                 fi
         	echo -e "\n\t[workloads.load$i]\n\tcount=0\n\theader="\"{}"\"\n\tname="\"load$i"\"\n\tduration="\"$d"\"\n\ttype="\"PUT"\"\n\tworkers=$w\n\tbucket="\"$c"\"\n\tfile_path="\"$path"\"\n\tpayload="\"$p\""" >> wl.tmp;
