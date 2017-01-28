@@ -106,14 +106,14 @@ let k=0
                 else
 			path=$f
 			if [ $j -lt $mf ]; then
-                        	p=$p$k
+                        	payload=$p$k
 			else
 				let j=0
 				let k++
-				p=$p$k
+				payload=$p$k
 			fi
                 fi
-        	echo -e "\n\t[workloads.load$i]\n\tcount=0\n\theader="\"{}"\"\n\tname="\"load$i"\"\n\tduration="\"$d"\"\n\ttype="\"PUT"\"\n\tworkers=$w\n\tbucket="\"$c"\"\n\tfile_path="\"$path"\"\n\tpayload="\"$p\""" >> wl.tmp;
+        	echo -e "\n\t[workloads.load$i]\n\tcount=0\n\theader="\"{}"\"\n\tname="\"load$i"\"\n\tduration="\"$d"\"\n\ttype="\"PUT"\"\n\tworkers=$w\n\tbucket="\"$c"\"\n\tfile_path="\"$path"\"\n\tpayload="\"$payload\""" >> wl.tmp;
 		if [ -n "$h" ]; then
                         echo -e "\t[workloads.load$i.Header]" >> wl.tmp;
 			for header in $headers; do

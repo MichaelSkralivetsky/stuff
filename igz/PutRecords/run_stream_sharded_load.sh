@@ -8,6 +8,7 @@ SIZES="100 1024 4096"
 RECORDS="1"
 GETS="0"
 SHARDS="1 2 3 4 5 6 7 8 9 10 15 20"
+SHARD_SIZE=32768
 
 echo "sep=;" > nginx_results.csv
 
@@ -25,11 +26,11 @@ for shard in $SHARDS; do
 			fi 			
 			stream=stream_`uuidgen`
 			curl -H "Content-Type:application/json" -H "X-v3io-function:CreateStream" -d '{"ShardCount":'$shard',"ShardRetentionPeriodSizeMB":'$SHARD_SIZE'}' -X PUT http://$SRV_IP:$PORT/1/$stream -w "%{http_code}"
-			./make_sharded_workload.sh -n $workload -g 0 -w $worker -r 0 -s $SRV_IP -c $CONT_ID -p /tmp/payload -d $DURATION -f $stream -h Content-Type="\"application/json"\",X-v3io-function="\"PutSingleRecord"\" -m $shard			
+			./make_sharded_workload.sh -n $workload -g 0 -w $worker -r 0 -s $SRV_IP -c $CONT_ID -p /tmp/payload -d $DURATION -f $stream -h Content-Type="\"application/json"\",X-v3io-function="\"PutRecords"\" -m $shard			
 			for ((i=0;i<$shard;i++)); do
-				./gen_sharded_data.sh /tmp/payload$i $size $shard
+				./gen_sharded_data.sh /tmp/payload$i $size $i
 			done
-			/home/iguazio/git/naipi_tools/nginx_loader/nginx_loader -c wl.tmp
+			/opt/tools/http_blaster/http_blaster -c wl.tmp -o nginx_loader.results
 			res=`echo $?`
 			if [ $res -ne 0 ]; then
 				continue
@@ -48,7 +49,7 @@ for shard in $SHARDS; do
 			putlatavg=`sed "17q;d" nginx_loader.results | cut -d "=" -f 2`
 			echo -ne "$workload;$worker;$size;$totalreq;$totaliops;$getreq;$getiops;$getlatmin;$getlatmax;$getlatavg;$putreq;$putiops;$putlatmin;$putlatmax;$putlatavg;$res;$record;$gets;$shard" >> nginx_results.csv
 			echo "" >> nginx_results.csv
-			sleep 60s
+			sleep 90s
 
 done
 done
